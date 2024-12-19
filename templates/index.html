@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+</head>
+<body>
+    <h1>Library Management System</h1>
+    <form action="{{ url_for('add_record') }}" method="POST">
+        <input type="text" name="bk_name" placeholder="Book Name" required><br>
+        <input type="text" name="bk_id" placeholder="Book ID" required><br>
+        <input type="text" name="author_name" placeholder="Author Name" required><br>
+        <input type="text" name="bk_status" placeholder="Status" required><br>
+        <input type="text" name="card_id" placeholder="Card ID"><br>
+        <button type="submit">Add Record</button>
+    </form>
+
+    <h2>Book Inventory</h2>
+    <table>
+        <tr>
+            <th>Book Name</th>
+            <th>Book ID</th>
+            <th>Author Name</th>
+            <th>Status</th>
+            <th>Card ID</th>
+        </tr>
+        {% for record in records %}
+        <tr>
+            <td>{{ record['BK_NAME'] }}</td>
+            <td>{{ record['BK_ID'] }}</td>
+            <td>{{ record['AUTHOR_NAME'] }}</td>
+            <td>{{ record['BK_STATUS'] }}</td>
+            <td>{{ record['CARD_ID'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

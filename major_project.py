@@ -1,5 +1,6 @@
 # Importing all necessary modules
 import sqlite3
+import os
 
 from tkinter import *
 import tkinter.ttk as ttk
@@ -7,7 +8,8 @@ import tkinter.messagebox as mb
 import tkinter.simpledialog as sd
 
 # Connecting to Database
-connector = sqlite3.connect('library.db')
+db_path = os.path.join(os.path.dirname(__file__), 'library.db')
+connector = sqlite3.connect(db_path)
 cursor = connector.cursor()
 
 connector.execute(
@@ -16,13 +18,12 @@ connector.execute(
 
 # Functions
 def issuer_card():
-	Cid = sd.askstring('Issuer Card ID', 'What is the Issuer\'s Card ID?\t\t\t')
+    Cid = sd.askstring('Issuer Card ID', 'What is the Issuer\'s Card ID?\t\t\t')
 
-	if not Cid:
-		mb.showerror('Issuer ID cannot be zero!', 'Can\'t keep Issuer ID empty, it must have a value')
-	else:
-		return Cid
-
+    if not Cid:
+        mb.showerror('Issuer ID cannot be zero!', 'Can\'t keep Issuer ID empty, it must have a value')
+    else:
+        return Cid
 
 def display_records():
 	global connector, cursor

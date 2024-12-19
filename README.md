@@ -59,7 +59,6 @@ The database (`library.db`) uses the following table structure:
 ### Output
 ![image](https://github.com/user-attachments/assets/d33e1a9f-bfd3-458c-9dca-3bc24341e698)
 
-![alt text](image.png)
 
 ### Library Table:
 - **BK_NAME** (TEXT): The name of the book.

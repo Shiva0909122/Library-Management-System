@@ -57,6 +57,7 @@ A simple Library Management System built with Python and Tkinter, using SQLite f
 The database (`library.db`) uses the following table structure:
 
 ### Output
+![image](https://github.com/user-attachments/assets/d33e1a9f-bfd3-458c-9dca-3bc24341e698)
 
 
 ### Library Table:
@@ -65,6 +66,3 @@ The database (`library.db`) uses the following table structure:
 - **AUTHOR_NAME** (TEXT): The name of the book's author.
 - **BK_STATUS** (TEXT): The current status of the book (`Available` or `Issued`).
 - **CARD_ID** (TEXT): The ID of the cardholder (if the book is issued).
-
-**Created by [Shivarth]**
-```

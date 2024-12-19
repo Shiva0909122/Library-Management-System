@@ -57,6 +57,7 @@ A simple Library Management System built with Python and Tkinter, using SQLite f
 The database (`library.db`) uses the following table structure:
 
 ### Output
+![image](https://github.com/user-attachments/assets/d33e1a9f-bfd3-458c-9dca-3bc24341e698)
 
 ![alt text](image.png)
 

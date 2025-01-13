@@ -1,5 +1,3 @@
-# Library Management System
-
 A simple Library Management System built with Python and Tkinter, using SQLite for database management. The system allows users to manage books, including adding new books, viewing and updating book details, tracking the status of books (available or issued), and deleting books or the entire inventory.
 
 ## Features
@@ -59,7 +57,6 @@ The database (`library.db`) uses the following table structure:
 ### Output
 ![image](https://github.com/user-attachments/assets/d33e1a9f-bfd3-458c-9dca-3bc24341e698)
 
-![alt text](image.png)
 
 ### Library Table:
 - **BK_NAME** (TEXT): The name of the book.
